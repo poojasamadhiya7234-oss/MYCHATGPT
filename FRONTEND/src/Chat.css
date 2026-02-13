@@ -1,0 +1,50 @@
+.chats {
+  width: 100%;
+  max-width: 750px;
+  margin: auto;
+  display: flex;
+  flex-direction: column;
+  gap: 14px;
+}
+
+/* USER MESSAGE RIGHT */
+.userdiv {
+  display: flex;
+  justify-content: flex-end;
+}
+
+.userMessage {
+  background-color: rgba(255, 255, 255, 0.08);
+  padding: 12px 16px;
+  border-radius: 14px;
+  max-width: 70%;
+  width: fit-content;
+  font-size: 15px;
+}
+
+/* GPT MESSAGE LEFT */
+.gptDiv {
+  display: flex;
+  justify-content: flex-start;
+}
+
+.gptMessage {
+  background-color: rgba(255, 255, 255, 0.05);
+  padding: 12px 16px;
+  border-radius: 14px;
+  max-width: 70%;
+  width: fit-content;
+  font-size: 15px;
+  line-height: 1.5;
+}
+
+/* code block */
+pre {
+  white-space: pre-wrap;
+  border-radius: 14px;
+  padding: 12px;
+}
+
+.hljs {
+  border-radius: 14px !important;
+}

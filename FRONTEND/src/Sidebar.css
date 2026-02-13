@@ -1,0 +1,198 @@
+/* .sidebar{
+    background-color:#171717 ;
+    color: #b4b4b4;
+    height: 100vh;
+    width: 320px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+}
+
+
+button{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin: 10px;
+    padding: 10px;
+    border-radius: 5px;
+    background-color: transparent;
+    border: solid 0.5px rgba(255,255,255,0.5);
+    cursor: pointer;
+}
+
+.logo{
+    height:30px;
+    width: 30px;
+    background-color: #fff;
+    border-radius: 50%;
+    object-fit: cover;
+
+    margin-right: 218px;
+}
+
+
+button span {
+    font-size: 20px;
+
+}
+
+button:hover{
+    background-color: rgba(180,180,180,0.05);
+}
+
+.history{
+    margin: 10px;
+    padding: 10px;
+    height:100% ;
+
+}
+
+.history li{
+    list-style-type: none;
+    cursor: pointer;
+    padding: 2px;
+    margin-bottom: 0.3rem;
+    font-size: 14px;
+    border: solid 10px transparent;
+    position: relative;
+}
+
+.history li:hover{
+    background-color: rgba(180,180,180,0.05);
+    border-radius: 10px;
+}
+
+
+.sign{
+    margin: 10px;
+    padding: 10px;
+    text-align: center;
+    font-size: 14px;
+    border-top: solid 0.25px rgba(255,255,255,0.5);
+}
+
+ */
+
+
+
+ /* ---------- SIDEBAR ---------- */
+
+.sidebar {
+  background-color: #171717;
+  color: #e3e3e3;
+  height: 100vh;
+  width: 260px;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  border-right: 1px solid rgba(255, 255, 255, 0.1);
+}
+
+/* NEW CHAT BUTTON */
+.sidebar button {
+  display: flex;
+  align-items: center;
+  padding: 12px;
+  margin: 12px;
+  border-radius: 10px;
+  background-color: rgba(255, 255, 255, 0.05);
+  border: none;
+  cursor: pointer;
+  transition: 0.3s;
+  gap: 12px;
+}
+
+.sidebar button:hover {
+  background-color: rgba(255, 255, 255, 0.12);
+}
+
+/* CHATGPT LOGO */
+.logo {
+  height: 32px;
+  width: 32px;
+  border-radius: 50%;
+  object-fit: cover;
+  margin-right: 92px;
+}
+
+/* HISTORY SECTION */
+.history {
+  padding: 10px;
+  overflow-y: auto;
+  flex-grow: 1;
+}
+
+.history li {
+  padding: 10px;
+  font-size: 15px;
+  list-style: none;
+  border-radius: 8px;
+  cursor: pointer;
+  color: #b4b4b4;
+  transition: 0.2s ease;
+}
+
+.history li:hover {
+  background-color: rgba(255, 255, 255, 0.1);
+  color: white;
+}
+
+/* FOOTER SIGN */
+.sign {
+  padding: 12px;
+  text-align: center;
+  border-top: 1px solid rgba(255, 255, 255, 0.15);
+  font-size: 14px;
+  color: #aaaaaa;
+}
+
+
+.thread-item {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 10px;
+  cursor: pointer;
+  border-radius: 8px;
+  margin-bottom: 5px;
+}
+
+.thread-item:hover {
+  background-color: rgba(255, 255, 255, 0.1);
+}
+
+.thread-title {
+  flex: 1;
+  color: white;
+}
+
+/* pehle icon hidden rahega */
+.delete-icon {
+  color: red;
+  font-size: 16px;
+  margin-left: 10px;
+  cursor: pointer;
+  opacity: 0;
+  visibility: hidden;
+  transition: 0.2s;
+}
+
+/* hover pe icon visible ho jayega */
+.thread-item:hover .delete-icon {
+  opacity: 1;
+  visibility: visible;
+}
+
+.delete-icon:hover {
+  color: rgb(255, 80, 80);
+  transform: scale(1.1);
+}
+
+
+.active-thread {
+  background-color: rgba(255, 255, 255, 0.15);
+  border-left: 4px solid #00ff99;
+}
+
+
