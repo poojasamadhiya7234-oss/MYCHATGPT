@@ -24,4 +24,7 @@ dist-ssr
 *.sw?
 node_modules
 .env
+BACKEND/.env
+FRONTEND/.env
 dist
+
