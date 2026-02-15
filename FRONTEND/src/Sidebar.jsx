@@ -7,7 +7,10 @@ function Sidebar(){
     const {allThreads,setAllThreads,currThreadId,setNewChat,setPrompt,setReply,setcurrThreadId,setprevChats}=useContext(MyContext);
     const getAllThreads=async ()=>{
         try{
-            const response=await fetch("http://localhost:5000/api/thread");
+           const response = await fetch(`${import.meta.env.VITE_BACKEND_URL}/api/thread`);
+
+
+
             const res=await response.json();
             const filterData=res.map(thread=>({threadId:thread.threadId,title:thread.title}))
             console.log(filterData);
@@ -33,7 +36,7 @@ function Sidebar(){
     const changeThread=async (newthreadId)=>{
         setcurrThreadId(newthreadId);
         try{ 
-            const response = await fetch(`http://localhost:5000/api/thread/${newthreadId}`)
+            const response = await fetch(`${import.meta.env.VITE_BACKEND_URL}/api/thread/${newthreadId}`)
           const res=await response.json();
             console.log(res);
             setprevChats(res);
@@ -50,7 +53,7 @@ function Sidebar(){
 
     const deleteThread=async (threadId)=>{
         try{
-       const response=await fetch(`http://localhost:5000/api/thread/${threadId}`,{method:"DELETE"});
+       const response=await fetch(`${import.meta.env.VITE_BACKEND_URL}/api/thread/${threadId}`,{method:"DELETE"});
        const res=await response.json();
        console.log(res);
 
