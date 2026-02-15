@@ -236,7 +236,7 @@ function ChatWindow() {
       </div>
 
       <div className="loader-center">
-        <ClipLoader color="#fff" loading={loading} size={50} />
+        <ClipLoader color="#fff" loading={loading} size={25} />
       </div>
 
       <div className="chatinput">
