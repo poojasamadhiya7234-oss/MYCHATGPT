@@ -224,7 +224,7 @@
   font-size: 13px;
 }
 
-.loader-center {
+/* .loader-center {
   position: fixed;
   top: 0;
   left: 0;
@@ -236,4 +236,4 @@
   background: rgba(0,0,0,0.4);
   z-index: 9999;
 }
-
+ */
